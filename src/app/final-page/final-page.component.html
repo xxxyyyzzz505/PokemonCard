@@ -1,0 +1,23 @@
+<div class="container">
+    <mat-card class="card">
+        <img mat-card-image 
+        class="icon"
+        [src]="pokemon.sprites.other['official-artwork'].front_default" 
+        alt="Photo of a Pokemon">
+        <mat-card-title id="name">
+            {{pokemon.forms[0].name.toUpperCase()}}
+        </mat-card-title>
+            #{{pokemon.id}}
+        <mat-card-content>
+            <ul>
+                <li>Weight: {{pokemon.weight}}</li>
+                <li>Height: {{pokemon.height}}</li>
+                <li>Type: {{pokemon.types[0].type.name}}</li>
+            </ul>
+            <button class="btn" mat-raised-button color="primary" (click)=onClick() >Back</button>
+        </mat-card-content>
+        
+      </mat-card>
+</div>
+
+

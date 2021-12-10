@@ -1,0 +1,12 @@
+<mat-card>
+    <img [src]="selectPokemon?.sprites.front_default" alt="">
+    <div mat-dialog-content>
+    <p>Do you want to select {{selectdata.pokemonName.toUpperCase()}}?</p>
+    </div>
+    <div mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)=onClick() mat-dialog-close>Confirm</button>
+    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+    </div>
+</mat-card>
+
+<!-- {{selectdata.pokemonName}} -->

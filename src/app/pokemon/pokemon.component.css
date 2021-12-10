@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 1rem;
+}
+
+.icon {
+    background-color: aliceblue;
+}
